@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PasswordGenerator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="screen">
+        <div id="inputbox">
+            <input type="text" name="Password" id="Password" readonly>
+        </div>
+        <div class="container">
+            <h1>Customize your Password</h1><hr>
+            <input type="range" id="range" name="range" min="1" max="20" oninput="rangeValue.value=range.value">
+            <output for="range" id="rangeValue" class="range-value" >11</output><br>
+            <button id="generate" >Generate</button>
+        </div>
+        <br>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
